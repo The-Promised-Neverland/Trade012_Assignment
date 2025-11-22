@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS stocks (
+	symbol VARCHAR(10) PRIMARY KEY,
+	company_name VARCHAR(255) NOT NULL,
+	isin VARCHAR(20) UNIQUE,
+	created_at TIMESTAMP DEFAULT NOW()
+);
